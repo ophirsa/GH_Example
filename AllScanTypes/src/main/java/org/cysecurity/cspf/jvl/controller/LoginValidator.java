@@ -6,7 +6,6 @@ public class LoginValidator extends HttpServlet {
             throws ServletException, IOException {
         
        
-       String user=request.getParameter("username").trim();
           String pass=request.getParameter("password").trim();
            try
              {
