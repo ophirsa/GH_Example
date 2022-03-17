@@ -5,8 +5,6 @@ public class LoginValidator extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-       String user=request.getParameter("username").trim();
-          String pass=request.getParameter("password").trim();
            try
              {
                  Connection con=new DBConnect().connect(getServletContext().getRealPath("/WEB-INF/config.properties"));
